@@ -21,21 +21,24 @@ link /etc/blockets/colors.env colors.env
 Create the following directory structure:
 
 env/
+
 host_lists/
-tasks/<project>/
+
+tasks/project/
+
 pipelines/
 
-### env /
+### env/
 
-Create a <project>.env file in env/ with the variables and project specific scripts. Note you may want to create a env/<project>/ dir.
+Create a project.env file in env/ with the variables and project specific scripts. Note you may want to create a env/project/ dir.
 
 ### host_lists/
 
-Create lists of hosts in host_lists/. For example <project>.dev.hosts, <project>.prod.hosts etc ...
+Create lists of hosts in host_lists/. For example project.dev.hosts, project.prod.hosts etc ...
 
 ### tasks/
 
-Create scripts in the tasks/<project>/ directory. Look at the example build and deploy scripts for examples.  
+Create scripts in the tasks/project/ directory. Look at the example build and deploy scripts for examples.  
 
 These scripts can be run individually but usually they would be run by a wrapper script in pipelines directory.
 
@@ -52,3 +55,9 @@ The idea is that tasks are assembled into larger streams of execution using pipe
 
 
 See the example files in each directory to for specific examples.
+
+## TODO
+
+- [ ] More in depth examples
+
+
