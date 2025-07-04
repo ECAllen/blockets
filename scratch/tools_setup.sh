@@ -43,3 +43,12 @@ docker logout
 docker login
 pass show docker-credential-helpers/
 docker pull someusername/cards
+
+
+export GPG_TTY=$(tty)
+3. If you want to keep GPG signing, check your GPG setup:
+bashgpg --list-secret-keys --keyid-format LONG
+4. Make sure your GPG key is properly configured in Git:
+bashgit config --global user.signingkey YOUR_GPG_KEY_ID
+
+
